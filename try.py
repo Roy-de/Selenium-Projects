@@ -11,5 +11,6 @@ elem.clear()
 elem.send_keys("GBPUSD=X")
 elem.send_keys(Keys.RETURN)
 #assert "No result found." not in driver.page_source
-time.sleep(30)
+price = driver.find_element(By.CLASS_NAME,"Fw(b) Fz(36px) Mb(-4px) D(ib)")
+print(price)
 driver.close()
